@@ -14,7 +14,9 @@ function reverseArrayInPlace(arr){
         arr[i] = arr[len - 1 - i];
         arr[len - 1 - i] = temp;
     }
+    return arr;// added in <<EJS>> solution
 }
+
 
 // ???:
 
@@ -22,6 +24,7 @@ function reverseArrayInPlace(arr){
 // and pure functions in the previous chapter, 
 // which variant do you expect to be useful in more situations?
 // Which one is more efficient?
+
 
 // According to <<EJS>>'s hint,
 // function reverseArray can also be:

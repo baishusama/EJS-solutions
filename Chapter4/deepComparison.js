@@ -43,3 +43,27 @@ function deepEqual(obj1, obj2){
     */
     return true;
 }
+
+// <<EJS>>'s solution:
+
+function deepEqual(a, b){
+    if(a === b) return true;
+
+    if(a == null || typeof a !== "object"
+        || b == null || typeof b !=="object"){
+        return false;
+    }
+
+    var propsInA = propsInB = 0, prop;
+    for(prop in a){
+        propsInA++;
+    }
+    for(prop in b){
+        propsInB++;
+        if(!(prop in a) || !deepEqual(a[prop], b[prop])){
+            return false;
+        }
+    }
+
+    return propsInA == propsInB;
+}
