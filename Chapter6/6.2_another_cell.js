@@ -1,4 +1,4 @@
-// NEED to run at the SANDBOX: http://eloquentjavascript.net/code/#5
+// NEED to run at the SANDBOX: http://eloquentjavascript.net/code/#6
 // And has sth...
 
 /*// misunderstood inner argument at first
